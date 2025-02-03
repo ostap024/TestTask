@@ -1,9 +1,9 @@
 name: Run Tests on PR Merge to Main
 
 on:
-  push:
+  pull_request:
     branches:
-      - '**'
+      - main
       
 jobs:
   test:
@@ -16,7 +16,7 @@ jobs:
     - name: Set up .NET
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: '6.x'  
+        dotnet-version: '8.x'  
 
     - name: Install dependencies
       run: |
