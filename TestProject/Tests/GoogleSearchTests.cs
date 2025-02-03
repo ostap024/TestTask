@@ -3,7 +3,6 @@ using TestProject.PageObject.Pages;
 
 namespace TestProject.Tests.Tests
 {
-
     [TestFixture]
     public class GoogleSearchTests : UITestFixture
     {
