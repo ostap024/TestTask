@@ -10,6 +10,7 @@ namespace TestProject
             AtataContext.Configure()
                 .UseChrome()
                     .WithArguments("start-maximized")
+                    .WithArguments("headless")
                 .Build();
         }
 
